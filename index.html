@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="post">
+        <div>
+        <div>
+            <!--NOMBRE-->
+            <label for="txtNombre">Nombre: *</label>
+            <input type="text" id="txtNombre" name="txtNombre" required>
+        </div>
+        <div>
+            <!--Correo-->
+            <label for="txtCorreo">Correo: *</label>
+            <input type="mail" id="txtCorreo" name="txtCorreo" required>
+        </div>
+        <div>
+            <!--Telefono-->
+            <label for="txtTelefono">Teléfono: *</label>
+            <input type="tel" id="txtTelefono" name="txtTelefono" placeholder="2995111445" required>
+        </div>
+        <div>
+            <label for="select1">Nivel Educativo: </label>
+            <select id="select1" name="select1" required>
+                <option value="inicial">Inicial</option>
+                <option value="primaria">Primaria</option>
+                <option value="secuandario">secuandario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+                <option value="Posgrado">Posgrado</option>
+            </select>
+        </div>
+        <div>
+            <label for="txtMensaje">Mensaje: *</label>
+            <!--textarea es para agregar un mensaje, que puede tener varios renglones-->
+            <textarea name="txtMensaje" id="textarea" placeholder ="Escriba aqui su mensaje" required></textarea>
+        </div>
+        </div>
+        <div>
+            <!--submit lo que hace es enviar al servidor todos los datos que se completaron-->
+            <button type="submit" id="btnEnviar" name="btnEnviar">ENVIAR</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
